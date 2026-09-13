@@ -1,13 +1,13 @@
 [project]
 name = "slack-log-handler"
-version = "0.1.0"
+version = "0.2.2"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "sashimi3", email = "8381956+sashimi3@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = ["slack-sdk"]
 
 [build-system]
 requires = ["uv_build>=0.11.32,<0.12.0"]
