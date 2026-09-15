@@ -1,4 +1,4 @@
-# Slack Log Handler
+# Python Slack Log Handler
 
 A tiny, framework‑agnostic Python logging handler that forwards log messages to Slack.
 
@@ -23,6 +23,12 @@ or
 
 ```shell
 uv add git+https://github.com/sashimi3/python-slack-log-handler
+```
+
+To specify tag:
+
+```shell
+uv add git+https://github.com/sashimi3/python-slack-log-handler@v0.2.2
 ```
 
 ## Installation (development)
