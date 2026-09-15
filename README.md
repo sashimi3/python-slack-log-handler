@@ -3,16 +3,30 @@
 A tiny, framework‑agnostic Python logging handler that forwards log messages to Slack.
 
 ## Features
+
 - Supports **Incoming Webhook** URLs and **Bot Token** (`chat.postMessage`).
 - Thin wrapper around the official `slack-sdk` library.
 - No framework dependencies – works with scripts, Flask, FastAPI, Celery, cron jobs, etc.
 - Installable via a VCS URL:
 
-```bash
-pip install git+https://<your‑repo>/slack-log-handler.git
+```shell
+pip install git+https://github.com/sashimi3/python-slack-log-handler
+```
+
+or
+
+```shell
+pipenv install git+https://github.com/sashimi3/python-slack-log-handler
+```
+
+or
+
+```shell
+uv add git+https://github.com/sashimi3/python-slack-log-handler
 ```
 
 ## Installation (development)
+
 ```bash
 uv init --lib slack-log-handler
 cd slack-log-handler
@@ -49,6 +63,7 @@ logger.info("Application started")
 The handler respects the standard ``logging`` level hierarchy; set the handler's level to control which messages are sent.
 
 ## Testing
+
 ```bash
 pytest --cov=slack_log_handler
 ```
